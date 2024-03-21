@@ -1,0 +1,85 @@
+:root {
+    --dark-blue-100: #609ed4;
+    --dark-blue-200: #356ea9;
+    --dark-blue-300: #0a3871;
+    --dark-blue-400: #072b61;
+    --dark-blue-500: #052051;
+
+    --light-blue-100: #f3f5fc;
+    --light-blue-200: #eff1fa;
+    --light-blue-300: #e9ecf8;
+    --light-blue-400: #aab2d5;
+    --light-blue-500: #757fb2;
+
+    --gray-100: #ced4d4;
+    --gray-200: #adb5bd;
+    --gray-300: #868e96;
+    --gray-400: #495057;
+    --gray-500: #343a40;
+
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--light-blue-100);
+}
+
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 30px;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: var(--light-blue-100);
+    font-family: "Inter", sans-serif;
+    padding: 3rem 5rem 3rem 0;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 20px
+}
+
+.hidden {
+    display: none;
+}
+
+.visibile {
+    display: block;
+}
+
+@media only screen and (max-width: 1024px){
+    .container {
+        padding: 3rem;
+    }
+
+    .logo {
+        left: -25px;
+        top: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container {
+        padding: 10rem 3rem 2rem;
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}

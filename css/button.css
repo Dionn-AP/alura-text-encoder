@@ -1,0 +1,76 @@
+.container__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+}
+
+.button__encoder, .button__decoder {
+    all: unset;
+    display: block;
+    align-items: center;
+    text-align: center;
+    height: 5rem;
+    width: 48%;
+    border-radius: 20px;
+    border: 1px solid var(--dark-blue-300);
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.button__encoder {
+    color: var(--white);
+    background-color: var(--dark-blue-300);
+}
+
+.button__encoder:hover {
+    background-color: var(--dark-blue-500);
+}
+
+.button__decoder {
+    color: var(--dark-blue-300);
+    background-color: var(--gray-100);
+}
+
+.button__decoder:hover {
+    background-color: var(--gray-300);
+}
+
+.button__copy {
+    all: unset;
+    position: absolute;
+    bottom: 18px;
+    height: 5rem;
+    width: 90%;
+    border-radius: 14px;
+    color: var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-300);
+    font-size: 12px;
+    text-align: center;
+    background-color: var(--white);
+    transition: background-color .2s ease-in-out;
+    cursor: pointer;
+}
+
+.button__copy:hover {
+    background-color: var(--gray-100);
+}
+
+.button__copy:active {
+    background-color: var(--gray-100);
+}
+
+.button__copy i::after {
+    content: "\2713";
+    height: .5rem;
+    width: .5rem;
+    color: green
+}
+
+@media only screen and (max-width: 768px){
+    .button__copy {
+        position: initial;
+    }
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/main.js" defer></script>
+
+    <title>Text Decoder</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <img class="logo" src="./img/logo.png" alt="Logo da Alura" />
+        <div class="container__content">
+            <textarea 
+            cols="50" 
+            rows="100" 
+            autofocus
+            placeholder="Digite seu texto" 
+            autocapitalize="none" 
+            class="container__box">
+
+            </textarea>
+            <div class="alert__menssage">
+                <img src="./img/alert.png" alt="Ícone de atenção !" />
+                <span>Apenas letras minúsculas e sem acento.</span>
+            </div>
+
+            <div class="container__buttons">
+                <button id="encoder" class="button__encoder" type="button">Criptografar</button>
+                <button id="decoder" class="button__decoder" type="button">Descriptografar</button>
+            </div>
+        </div>
+
+        <div class="container__message">
+            <img class="image__search" src="./img/people-searching.svg" alt="Pessoa procurando algo com uma lupa" />
+            <span class="container__message--title">Nenhuma mensagem encontrada</span>
+            <span class="container__message--subtitle">
+                Digite um texto que você deseja criptografar ou descriptografar.
+            </span>
+            <button class="button__copy" type="button">Copiar<i class="image__copy hidden"></i></button>
+        </div>
+    </div>
+
+</body>
+
+</html>
